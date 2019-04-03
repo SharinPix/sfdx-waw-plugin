@@ -3,6 +3,7 @@ import { AuthInfo, Messages } from '@salesforce/core';
 import { AnyJson } from '@salesforce/ts-types';
 import * as jsforce from 'jsforce';
 
+
 // Initialize Messages with the current plugin directory
 Messages.importMessagesDirectory(__dirname);
 
@@ -14,7 +15,7 @@ export default class ApexLogGet extends SfdxCommand {
   public static description = messages.getMessage('auth.username.login.description');
   public static examples = [];
 
-  public static readonly flagConfig = {
+  public static readonly flagsConfig = {
     instanceurl: flags.url({
       char: 'r',
       description: messages.getMessage('auth.username.login.flags.instanceurl')
@@ -34,6 +35,7 @@ export default class ApexLogGet extends SfdxCommand {
     const username = this.flags.username;
     let password = this.flags.password;
     let instanceUrl = this.flags.instanceurl;
+
 
     if (!instanceUrl) {
       instanceUrl = 'https://login.salesforce.com';
