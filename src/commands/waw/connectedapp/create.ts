@@ -110,11 +110,11 @@ export default class ConnectedAppCreate extends SfdxCommand {
       oauthConfig: { callbackUrl, consumerSecret, scopes }
     }];
   
-    if (canvasUrl !== null) {
+    console.log(canvasUrl)
+    if (canvasUrl !== undefined) {
       metadata[0]['canvasConfig'] = canvasConfig;
     }
 
-    
     if (canvasUrl != null){
       canvasConfig['canvasUrl'] = canvasUrl;
       canvasConfig['accessMethod'] = accessMethod;

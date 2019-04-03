@@ -36,7 +36,6 @@ export default class ApexLogGet extends SfdxCommand {
     let password = this.flags.password;
     let instanceUrl = this.flags.instanceurl;
 
-
     if (!instanceUrl) {
       instanceUrl = 'https://login.salesforce.com';
     }
