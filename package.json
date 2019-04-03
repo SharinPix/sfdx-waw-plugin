@@ -4,12 +4,16 @@
   "version": "1.0.0",
   "author": "Wade Wegner @WadeWegner",
   "repository": "WadeWegner/sfdx-waw-plugin",
-  "files": ["*"],
+  "files": [
+    "/lib",
+    "/messages",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
   "bugs": {
     "url": "https://github.com/wadewegner/sfdx-waw-plugin/issues"
   },
   "dependencies": {
-
     "@salesforce/command": "^1",
     "@salesforce/core": "^1",
     "@salesforce/kit": "^1",
@@ -59,12 +63,6 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "files": [
-    "/lib",
-    "/messages",
-    "/npm-shrinkwrap.json",
-    "/oclif.manifest.json"
-  ],
   "homepage": "https://github.com/WadeWegner/sfdx-waw-plugin",
   "keywords": [
     "force.com",
@@ -121,8 +119,11 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "WadeWegner/sfdx-waw-plugin",
   "scripts": {
+    "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
+    "posttest": "tsc -p test --noEmit && tslint -p test -t stylish",
+    "prepack": "rm -rf lib && tsc && oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
+    "prepare": "rm -rf lib && tsc && oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
     "release": "np",
     "test": "nyc mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"

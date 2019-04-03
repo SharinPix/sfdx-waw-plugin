@@ -22,7 +22,7 @@ A plugin for the Salesforce CLI built by Wade Wegner and containing a lot of hel
 * [`sfdx-waw-plugin waw:codeclean:check [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawcodecleancheck---json---loglevel-tracedebuginfowarnerrorfatal)
 * [`sfdx-waw-plugin waw:codeclean:results [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawcodecleanresults---json---loglevel-tracedebuginfowarnerrorfatal)
 * [`sfdx-waw-plugin waw:codeclean:start [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawcodecleanstart--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawconnectedappcreate--n-string--l-string--r--c-string--d-string--s-string--e-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e <string>] [-i <string>] [-m <string>] [-f <string>] [-o <string>] [-p <string>] [-q <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawconnectedappcreate--n-string--l-string--r--c-string--d-string--s-string--e-string--i-string--m-string--f-string--o-string--p-string--q-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
 * [`sfdx-waw-plugin waw:connectedapp:list -n <string> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawconnectedapplist--n-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
 * [`sfdx-waw-plugin waw:org:share -e <email> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-waworgshare--e-email--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
 * [`sfdx-waw-plugin waw:package2:update -d <string> [-i <id>] [-n <string>] [-v <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawpackage2update--d-string--i-id--n-string--v-string---json---loglevel-tracedebuginfowarnerrorfatal)
@@ -119,21 +119,28 @@ OPTIONS
 
 _See code: [src/commands/waw/codeclean/start.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.0.0/src/commands/waw/codeclean/start.ts)_
 
-## `sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e <string>] [-i <string>] [-m <string>] [-f <string>] [-o <string>] [-p <string>] [-q <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
 
 create a connected app in your org
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e 
-  <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  <string>] [-i <string>] [-m <string>] [-f <string>] [-o <string>] [-p <string>] [-q <string>] [-u <string>] 
+  [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]
 
 OPTIONS
   -c, --callbackurl=callbackurl                   callbackUrl (default is "sfdx://success")
   -d, --description=description                   connected app description
   -e, --contactemail=contactemail                 connected app contact email
+  -f, --locations=locations                       connectedapp.create.flags.locations
+  -i, --canvasurl=canvasurl                       connectedapp.create.flags.canvasUrl
   -l, --label=label                               connected app label
+  -m, --accessmethod=accessmethod                 connectedapp.create.flags.accessMethod
   -n, --name=name                                 (required) connected app name
+  -o, --options=options                           connectedapp.create.flags.options
+  -p, --namespace=namespace                       connectedapp.create.flags.namespace
+  -q, --consumersecret=consumersecret             connectedapp.create.flags.consumerSecret
   -r, --certificate                               create and register a certificate
 
   -s, --scopes=scopes                             scopes separated by commas (defaut: Basic, Api, Web, RefreshToken;
