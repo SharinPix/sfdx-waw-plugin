@@ -121,10 +121,6 @@ export default class ConnectedAppCreate extends SfdxCommand {
       canvasConfig['options'] = options.split(',');
     }
 
-    if (canvasurl != null) {
-      metadata[0]['canvasConfig'] = canvasConfig;
-    }
-
     if (createCerts) {
       const pubKey = await this.generateCert(consumerSecret);
       metadata[0].oauthConfig['certificate'] = pubKey;

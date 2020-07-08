@@ -17,120 +17,145 @@ A plugin for the Salesforce CLI built by Wade Wegner and containing a lot of hel
 <!-- tocstop -->
 
 <!-- commands -->
-* [`sfdx-waw-plugin waw:apex:log:latest [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawapexloglatest--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:auth:username:login -u <string> [-r <url>] [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawauthusernamelogin--u-string--r-url--p-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:codeclean:check -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawcodecleancheck--i-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:codeclean:results -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawcodecleanresults--i-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:codeclean:start [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawcodecleanstart--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e <string>] [-i <string>] [-m <string>] [-f <string>] [-o <string>] [-p <string>] [-q <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawconnectedappcreate--n-string--l-string--r--c-string--d-string--s-string--e-string--i-string--m-string--f-string--o-string--p-string--q-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:connectedapp:list -n <string> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawconnectedapplist--n-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:org:share -e <email> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-waworgshare--e-email--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:package2:update -d <string> [-i <id>] [-n <string>] [-v <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawpackage2update--d-string--i-id--n-string--v-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:project:display [-p] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawprojectdisplay--p---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:project:pdir:create [-p <string>] [-d] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawprojectpdircreate--p-string--d---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:project:pdir:delete [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawprojectpdirdelete--p-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:project:pdir:set [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawprojectpdirset--p-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:source:create -p <string> [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawsourcecreate--p-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:source:oss -r <string> -p <string> [-b <string> | -t <string>] [-s <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawsourceoss--r-string--p-string--b-string---t-string--s-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:static:create -n <string> -t <string> -d <directory> [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawstaticcreate--n-string--t-string--d-directory---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:trace:create [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawtracecreate--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:trace:delete [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawtracedelete--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:trace:list [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawtracelist--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
-* [`sfdx-waw-plugin waw:workbench:open [-s <string> -t <string>] [-r <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-waw-plugin-wawworkbenchopen--s-string--t-string--r-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:apex:log:latest [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawapexloglatest--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:auth:username:login -u <string> [-r <url>] [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawauthusernamelogin--u-string--r-url--p-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:codeclean:check -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawcodecleancheck--i-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:codeclean:results -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawcodecleanresults--i-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:codeclean:start [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawcodecleanstart--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e <string>] [-i <string>] [-m <string>] [-f <string>] [-o <string>] [-p <string>] [-q <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawconnectedappcreate--n-string--l-string--r--c-string--d-string--s-string--e-string--i-string--m-string--f-string--o-string--p-string--q-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:connectedapp:list -n <string> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawconnectedapplist--n-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:org:share -e <email> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-waworgshare--e-email--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:package2:update -d <string> [-i <id>] [-n <string>] [-v <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawpackage2update--d-string--i-id--n-string--v-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:project:display [-p] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawprojectdisplay--p---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:project:pdir:create [-p <string>] [-d] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawprojectpdircreate--p-string--d---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:project:pdir:delete [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawprojectpdirdelete--p-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:project:pdir:set [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawprojectpdirset--p-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:source:create -p <string> [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawsourcecreate--p-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:source:oss -r <string> -p <string> [-b <string> | -t <string>] [-s <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawsourceoss--r-string--p-string--b-string---t-string--s-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:static:create -n <string> -t <string> -d <directory> [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawstaticcreate--n-string--t-string--d-directory---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:trace:create [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawtracecreate--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:trace:delete [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawtracedelete--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:trace:list [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawtracelist--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx-waw-plugin waw:workbench:open [-s <string> -t <string>] [-r <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-waw-plugin-wawworkbenchopen--s-string--t-string--r-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
 
-## `sfdx-waw-plugin waw:apex:log:latest [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:apex:log:latest [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 get the latest apex log
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:apex:log:latest [-u <string>] [--apiversion <string>] [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
-  --apiversion=apiversion                         override the api version used for api requests made by this command
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
+
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/apex/log/latest.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/apex/log/latest.ts)_
 
-## `sfdx-waw-plugin waw:auth:username:login -u <string> [-r <url>] [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:auth:username:login -u <string> [-r <url>] [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 authorize an org using the username password flow
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:auth:username:login -u <string> [-r <url>] [-p <string>] [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -p, --password=password                         password for org - it is recommended to not set this flag and use the
-                                                  prompt
+  -p, --password=password                                                           password for org - it is recommended
+                                                                                    to not set this flag and use the
+                                                                                    prompt
 
-  -r, --instanceurl=instanceurl                   the login URL of the instance the org lives on
+  -r, --instanceurl=instanceurl                                                     the login URL of the instance the
+                                                                                    org lives on
 
-  -u, --username=username                         (required) username for org
+  -u, --username=username                                                           (required) username for org
 
-  --json                                          format output as json
+  --json                                                                            format output as json
 
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/auth/username/login.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/auth/username/login.ts)_
 
-## `sfdx-waw-plugin waw:codeclean:check -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:codeclean:check -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 check the status of the code clean service running against your org
 
 ```
 USAGE
-  $ sfdx-waw-plugin waw:codeclean:check -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  $ sfdx-waw-plugin waw:codeclean:check -i <string> [--json] [--loglevel 
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -i, --id=id                                     (required) job id for the code clean service
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -i, --id=id                                                                       (required) job id for the code clean
+                                                                                    service
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/codeclean/check.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/codeclean/check.ts)_
 
-## `sfdx-waw-plugin waw:codeclean:results -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:codeclean:results -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 get the results of the code clean service running against your org
 
 ```
 USAGE
-  $ sfdx-waw-plugin waw:codeclean:results -i <string> [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  $ sfdx-waw-plugin waw:codeclean:results -i <string> [--json] [--loglevel 
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -i, --id=id                                     (required) job id for the code clean service
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -i, --id=id                                                                       (required) job id for the code clean
+                                                                                    service
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/codeclean/results.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/codeclean/results.ts)_
 
-## `sfdx-waw-plugin waw:codeclean:start [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:codeclean:start [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 check the status of the code clean service running against your org
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:codeclean:start [-u <string>] [--apiversion <string>] [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
-  --apiversion=apiversion                         override the api version used for api requests made by this command
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
+
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/codeclean/start.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/codeclean/start.ts)_
 
-## `sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e <string>] [-i <string>] [-m <string>] [-f <string>] [-o <string>] [-p <string>] [-q <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e <string>] [-i <string>] [-m <string>] [-f <string>] [-o <string>] [-p <string>] [-q <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 create a connected app in your org
 
@@ -138,310 +163,397 @@ create a connected app in your org
 USAGE
   $ sfdx-waw-plugin waw:connectedapp:create -n <string> [-l <string>] [-r] [-c <string>] [-d <string>] [-s <string>] [-e 
   <string>] [-i <string>] [-m <string>] [-f <string>] [-o <string>] [-p <string>] [-q <string>] [-u <string>] 
-  [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -c, --callbackurl=callbackurl                   callbackUrl (default is "sfdx://success")
-  -d, --description=description                   connected app description
-  -e, --contactemail=contactemail                 connected app contact email
+  -c, --callbackurl=callbackurl
+      callbackUrl (default is "sfdx://success")
 
-  -f, --locations=locations                       Indicates where the canvas app can appear to the user. Valid values
-                                                  are 'Chatter', 'ChatterFeed', 'MobileNav', 'PageLayout', 'Publisher',
-                                                  'Visualforce'
+  -d, --description=description
+      connected app description
 
-  -i, --canvasurl=canvasurl                       he URL of the third-party app that’s exposed as a canvas app.
+  -e, --contactemail=contactemail
+      connected app contact email
 
-  -l, --label=label                               connected app label
+  -f, --locations=locations
+      connectedapp.create.flags.locations
 
-  -m, --accessmethod=accessmethod                 Indicates how the canvas app initiates the OAuth authentication flow.
-                                                  Valid values are 'GET' and 'POST'
+  -i, --canvasurl=canvasurl
+      connectedapp.create.flags.canvasUrl
 
-  -n, --name=name                                 (required) connected app name
+  -l, --label=label
+      connected app label
 
-  -o, --options=options                           Indicates whether to hide the share button and header in the publisher
-                                                  for your canvas app, and whether the app is a canvas personal app.
+  -m, --accessmethod=accessmethod
+      connectedapp.create.flags.accessMethod
 
-  -p, --namespace=namespace                       Indicate if the Salesforce Organization has a namespace
+  -n, --name=name
+      (required) connected app name
 
-  -q, --consumersecret=consumersecret             A value that is combined with the consumerKey and used by the consumer
-                                                  for identification to Salesforce
+  -o, --options=options
+      connectedapp.create.flags.options
 
-  -r, --certificate                               create and register a certificate
+  -p, --namespace=namespace
+      connectedapp.create.flags.namespace
 
-  -s, --scopes=scopes                             scopes separated by commas (defaut: Basic, Api, Web, RefreshToken;
-                                                  valid: Basic, Api, Web, Full, Chatter, CustomApplications,
-                                                  RefreshToken, OpenID, CustomPermissions, Wave, Eclair)
+  -q, --consumersecret=consumersecret
+      connectedapp.create.flags.consumerSecret
 
-  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  -r, --certificate
+      create and register a certificate
 
-  --apiversion=apiversion                         override the api version used for api requests made by this command
+  -s, --scopes=scopes
+      scopes separated by commas (defaut: Basic, Api, Web, RefreshToken; valid: Basic, Api, Web, Full, Chatter, 
+      CustomApplications, RefreshToken, OpenID, CustomPermissions, Wave, Eclair)
 
-  --json                                          format output as json
+  -u, --targetusername=targetusername
+      username or alias for the target org; overrides default target org
 
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  --apiversion=apiversion
+      override the api version used for api requests made by this command
+
+  --json
+      format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)
+      [default: warn] logging level for this command invocation
 ```
 
 _See code: [src/commands/waw/connectedapp/create.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/connectedapp/create.ts)_
 
-## `sfdx-waw-plugin waw:connectedapp:list -n <string> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:connectedapp:list -n <string> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 list the connected apps in your org
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:connectedapp:list -n <string> [-u <string>] [--apiversion <string>] [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -n, --connectedappname=connectedappname         (required) connectedapp.list.flags.connectedappname
-  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
-  --apiversion=apiversion                         override the api version used for api requests made by this command
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -n, --connectedappname=connectedappname                                           (required)
+                                                                                    connectedapp.list.flags.connectedapp
+                                                                                    name
+
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
+
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/connectedapp/list.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/connectedapp/list.ts)_
 
-## `sfdx-waw-plugin waw:org:share -e <email> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:org:share -e <email> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 share a scratch org with someone via email
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:org:share -e <email> [-u <string>] [--apiversion <string>] [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -e, --emailaddress=emailaddress                 (required) email address of the scratch org recipient
-  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
-  --apiversion=apiversion                         override the api version used for api requests made by this command
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -e, --emailaddress=emailaddress                                                   (required) email address of the
+                                                                                    scratch org recipient
+
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
+
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/org/share.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/org/share.ts)_
 
-## `sfdx-waw-plugin waw:package2:update -d <string> [-i <id>] [-n <string>] [-v <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:package2:update -d <string> [-i <id>] [-n <string>] [-v <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 update the sfdx-project.json with package2 info
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:package2:update -d <string> [-i <id>] [-n <string>] [-v <string>] [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -d, --packagedirectory=packagedirectory         (required) package directory getting updated
-  -i, --id=id                                     id of package
-  -n, --versionnumber=versionnumber               version number of package
-  -v, --versionname=versionname                   version name of package
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -d, --packagedirectory=packagedirectory                                           (required) package directory getting
+                                                                                    updated
+
+  -i, --id=id                                                                       id of package
+
+  -n, --versionnumber=versionnumber                                                 version number of package
+
+  -v, --versionname=versionname                                                     version name of package
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/package2/update.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/package2/update.ts)_
 
-## `sfdx-waw-plugin waw:project:display [-p] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:project:display [-p] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 ```
 USAGE
-  $ sfdx-waw-plugin waw:project:display [-p] [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  $ sfdx-waw-plugin waw:project:display [-p] [--json] [--loglevel 
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -p, --packagedirectories                        list package directories
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -p, --packagedirectories                                                          list package directories
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/project/display.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/project/display.ts)_
 
-## `sfdx-waw-plugin waw:project:pdir:create [-p <string>] [-d] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:project:pdir:create [-p <string>] [-d] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 create a package directory for the project definition
 
 ```
 USAGE
-  $ sfdx-waw-plugin waw:project:pdir:create [-p <string>] [-d] [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  $ sfdx-waw-plugin waw:project:pdir:create [-p <string>] [-d] [--json] [--loglevel 
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -d, --default                                   sets default
-  -p, --path=path                                 path for default package directory
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -d, --default                                                                     sets default
+  -p, --path=path                                                                   path for default package directory
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/project/pdir/create.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/project/pdir/create.ts)_
 
-## `sfdx-waw-plugin waw:project:pdir:delete [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:project:pdir:delete [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 delete a package directory from the project definition
 
 ```
 USAGE
-  $ sfdx-waw-plugin waw:project:pdir:delete [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  $ sfdx-waw-plugin waw:project:pdir:delete [-p <string>] [--json] [--loglevel 
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -p, --path=path                                 path for default package directory
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -p, --path=path                                                                   path for default package directory
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/project/pdir/delete.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/project/pdir/delete.ts)_
 
-## `sfdx-waw-plugin waw:project:pdir:set [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:project:pdir:set [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 set the default package directory
 
 ```
 USAGE
-  $ sfdx-waw-plugin waw:project:pdir:set [-p <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  $ sfdx-waw-plugin waw:project:pdir:set [-p <string>] [--json] [--loglevel 
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -p, --path=path                                 path for default package directory
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -p, --path=path                                                                   path for default package directory
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/project/pdir/set.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/project/pdir/set.ts)_
 
-## `sfdx-waw-plugin waw:source:create -p <string> [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:source:create -p <string> [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 create a manifest file for your open source project
 
 ```
 USAGE
-  $ sfdx-waw-plugin waw:source:create -p <string> [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  $ sfdx-waw-plugin waw:source:create -p <string> [--json] [--loglevel 
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -p, --path=path                                 (required) path for your source
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -p, --path=path                                                                   (required) path for your source
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/source/create.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/source/create.ts)_
 
-## `sfdx-waw-plugin waw:source:oss -r <string> -p <string> [-b <string> | -t <string>] [-s <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:source:oss -r <string> -p <string> [-b <string> | -t <string>] [-s <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 sasily pulls in open source from a Github repository
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:source:oss -r <string> -p <string> [-b <string> | -t <string>] [-s <string>] [--json] 
-  [--loglevel trace|debug|info|warn|error|fatal]
+  [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -b, --branch=branch                             [default: master] git repository branch
-  -p, --path=path                                 (required) path for downloaded source
-  -r, --repository=repository                     (required) git repository (e.g. "wadewegner/Strike-Components")
-  -s, --server=server                             [default: github.com] git host server url
-  -t, --tag=tag                                   git repository tag
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -b, --branch=branch                                                               [default: master] git repository
+                                                                                    branch
+
+  -p, --path=path                                                                   (required) path for downloaded
+                                                                                    source
+
+  -r, --repository=repository                                                       (required) git repository (e.g.
+                                                                                    "wadewegner/Strike-Components")
+
+  -s, --server=server                                                               [default: github.com] git host
+                                                                                    server url
+
+  -t, --tag=tag                                                                     git repository tag
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/source/oss.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/source/oss.ts)_
 
-## `sfdx-waw-plugin waw:static:create -n <string> -t <string> -d <directory> [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:static:create -n <string> -t <string> -d <directory> [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 create a generic static resource
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:static:create -n <string> -t <string> -d <directory> [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -d, --outputdir=outputdir                       (required) folder for saving the created files
-  -n, --name=name                                 (required) static resource name
+  -d, --outputdir=outputdir                                                         (required) folder for saving the
+                                                                                    created files
 
-  -t, --type=type                                 (required) static resource type (application/javascript,
-                                                  text/javascript, application/xml, text/xml, text/css, text/plain,
-                                                  etc.)
+  -n, --name=name                                                                   (required) static resource name
 
-  --json                                          format output as json
+  -t, --type=type                                                                   (required) static resource type
+                                                                                    (application/javascript,
+                                                                                    text/javascript, application/xml,
+                                                                                    text/xml, text/css, text/plain,
+                                                                                    etc.)
 
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/static/create.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/static/create.ts)_
 
-## `sfdx-waw-plugin waw:trace:create [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:trace:create [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 create trace flag
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:trace:create [-u <string>] [--apiversion <string>] [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
-  --apiversion=apiversion                         override the api version used for api requests made by this command
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
+
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/trace/create.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/trace/create.ts)_
 
-## `sfdx-waw-plugin waw:trace:delete [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:trace:delete [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 delete trace flag
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:trace:delete [-u <string>] [--apiversion <string>] [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
-  --apiversion=apiversion                         override the api version used for api requests made by this command
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
+
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/trace/delete.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/trace/delete.ts)_
 
-## `sfdx-waw-plugin waw:trace:list [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:trace:list [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 list trace flags
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:trace:list [-u <string>] [--apiversion <string>] [--json] [--loglevel 
-  trace|debug|info|warn|error|fatal]
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
-  --apiversion=apiversion                         override the api version used for api requests made by this command
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  [default: warn] logging level for this command invocation
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
+
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/trace/list.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/trace/list.ts)_
 
-## `sfdx-waw-plugin waw:workbench:open [-s <string> -t <string>] [-r <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`
+## `sfdx-waw-plugin waw:workbench:open [-s <string> -t <string>] [-r <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
 open workbench using the current target username
 
 ```
 USAGE
   $ sfdx-waw-plugin waw:workbench:open [-s <string> -t <string>] [-r <string>] [-u <string>] [--apiversion <string>] 
-  [--json] [--loglevel trace|debug|info|warn|error|fatal]
+  [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -r, --urlonly=urlonly                                urlonly
-  -s, --setdefaultworkbenchurl=setdefaultworkbenchurl  store the workbench url as default
-  -t, --targetworkbenchurl=targetworkbenchurl          target workbench url
+  -r, --urlonly=urlonly                                                             urlonly
+  -s, --setdefaultworkbenchurl=setdefaultworkbenchurl                               store the workbench url as default
+  -t, --targetworkbenchurl=targetworkbenchurl                                       target workbench url
 
-  -u, --targetusername=targetusername                  username or alias for the target org; overrides default target
-                                                       org
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
 
-  --apiversion=apiversion                              override the api version used for api requests made by this
-                                                       command
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
 
-  --json                                               format output as json
+  --json                                                                            format output as json
 
-  --loglevel=(trace|debug|info|warn|error|fatal)       [default: warn] logging level for this command invocation
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 ```
 
 _See code: [src/commands/waw/workbench/open.ts](https://github.com/WadeWegner/sfdx-waw-plugin/blob/v1.5.0/src/commands/waw/workbench/open.ts)_
