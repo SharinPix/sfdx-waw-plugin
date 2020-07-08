@@ -121,6 +121,10 @@ export default class ConnectedAppCreate extends SfdxCommand {
       canvasConfig['options'] = options.split(',');
     }
 
+    if (canvasurl != null) {
+      metadata[0]['canvasConfig'] = canvasConfig;
+    }
+
     if (createCerts) {
       const pubKey = await this.generateCert(consumerSecret);
       metadata[0].oauthConfig['certificate'] = pubKey;
@@ -130,8 +134,6 @@ export default class ConnectedAppCreate extends SfdxCommand {
     this.ux.styledJSON(app);
     return app;
   }
-
-  
 
 
   private async generateCert(generatedConsumerSecret: string) {
@@ -149,8 +151,14 @@ export default class ConnectedAppCreate extends SfdxCommand {
   private async createConnectedApp(metadata): Promise<SaveResult | MetadataInfo> {
     const conn = this.org.getConnection();
     const results = await conn.metadata.create('ConnectedApp', metadata) as SaveResult;
+
     if (results.success) {
-      return (await conn.metadata.read('ConnectedApp', results.fullName) as MetadataInfo);
+      let connectedAppName = results.fullName;
+      if (this.flags.namespace != null) {
+        connectedAppName = this.flags.namespace + '__' + connectedAppName;
+      }
+
+      return (await conn.metadata.read('ConnectedApp', connectedAppName) as MetadataInfo);
     }
     return results;
   }
