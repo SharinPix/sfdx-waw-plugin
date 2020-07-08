@@ -3,14 +3,21 @@
   "description": "A plugin for the Salesforce CLI built by Wade Wegner and containing a lot of helpful commands.",
   "version": "1.5.0",
   "author": "Wade Wegner @WadeWegner",
+  "repository": "WadeWegner/sfdx-waw-plugin",
+  "files": [
+    "/lib",
+    "/messages",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
   "bugs": {
     "url": "https://github.com/wadewegner/sfdx-waw-plugin/issues"
   },
   "dependencies": {
     "@oclif/config": "^1",
-    "@salesforce/command": "^1",
-    "@salesforce/core": "^1",
-    "@salesforce/kit": "^1",
+    "@salesforce/command": "^3.0.1",
+    "@salesforce/core": "^2.7.0",
+    "@salesforce/kit": "^1.2.3",
     "async": "^2.6.1",
     "child_process": "^1.0.2",
     "fs-extra": "^7.0.1",
@@ -56,12 +63,6 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "files": [
-    "/lib",
-    "/messages",
-    "/npm-shrinkwrap.json",
-    "/oclif.manifest.json"
-  ],
   "homepage": "https://github.com/WadeWegner/sfdx-waw-plugin",
   "keywords": [
     "force.com",
@@ -118,7 +119,6 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "WadeWegner/sfdx-waw-plugin",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
     "posttest": "tsc -p test --noEmit && tslint -p test -t stylish",
